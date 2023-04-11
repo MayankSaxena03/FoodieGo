@@ -137,15 +137,15 @@ To install and use this project, follow these steps:
 Note: Make sure that MongoDB and Redis are running on your system before starting the server.
 
 
-# API Endpoints for Users
+## API Endpoints for Users
 
-## Authentication Routes
+### Authentication Routes
 | Route                        | Method | Description                          |
 |------------------------------|--------|--------------------------------------|
 | /api/user/auth/login         | POST   | Log in a user                        |
 | /api/user/auth/generate-otp  | POST   | Generate OTP for email verification |
 
-## Profile Routes
+### Profile Routes
 | Route                                            | Method | Description                            |
 |--------------------------------------------------|--------|----------------------------------------|
 | /api/user/validate                               | GET    | Validate user profile                  |
@@ -158,7 +158,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/user/address                                | GET    | Get all user addresses                 |
 | /api/user/address/{addressId}                     | GET    | Get user address by ID                 |
 
-## RESTAURANT ROUTES
+### Restaurant Routes
 | Route                                            | Method | Description                            |
 |--------------------------------------------------|--------|----------------------------------------|
 | /api/user/restaurants                            | GET    | Get all restaurants                    |
@@ -166,7 +166,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/user/restaurants/{restaurantId}/menu        | GET    | Get restaurant menu                    |
 | /api/user/restaurants/offers/{restaurantId}      | GET    | Get restaurant offers                  |
 
-## Cart Routes
+### Cart Routes
 | Route                                            | Method | Description                            |
 |--------------------------------------------------|--------|----------------------------------------|
 | /api/user/cart                                   | GET    | Get user cart                          |
@@ -177,7 +177,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/user/apply-coupon/{couponCode}              | POST   | Apply coupon code to user cart         |
 | /api/user/remove-coupon                          | DELETE | Remove coupon from user cart           |
 
-## Order Routes
+### Order Routes
 | Route                                            | Method | Description                            |
 |--------------------------------------------------|--------|----------------------------------------|
 | /api/user/create-order                           | POST   | Create new order for user              |
@@ -188,9 +188,9 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/user/rating/{orderID}                       | POST   | Add rating for a specific order for user|
 
 
-# API Endpoints for Restaurants
+## API Endpoints for Restaurants
 
-## Authentication Routes
+### Authentication Routes
 
 | Route                                | Method | Description                            |
 |--------------------------------------|--------|----------------------------------------|
@@ -198,7 +198,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/restaurant/auth/login           | POST   | Log in a restaurant                    |
 | /api/restaurant/auth/generate-otp    | POST   | Generate OTP for email verification    |
 
-## Profile Routes
+### Profile Routes
 
 | Route                            | Method | Description                    |
 |----------------------------------|--------|--------------------------------|
@@ -206,7 +206,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/restaurant/info            | GET    | Get restaurant info             |
 | /api/restaurant/update          | PUT    | Update restaurant info          |
 
-## Menu Routes
+### Menu Routes
 
 | Route                                       | Method | Description                 |
 |---------------------------------------------|--------|-----------------------------|
@@ -217,7 +217,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/restaurant/delete-menu-item/{menuItemId}| DELETE | Delete a menu item           |
 | /api/restaurant/update-menu-item/{menuItemId}| PUT    | Update a menu item           |
 
-## Offer Routes
+### Offer Routes
 
 | Route                                     | Method | Description                        |
 |-------------------------------------------|--------|------------------------------------|
@@ -227,7 +227,7 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/restaurant/update-offer/{offerId}    | PUT    | Update a specific offer for a restaurant |
 | /api/restaurant/delete-offer/{offerId}    | DELETE | Delete a specific offer for a restaurant |
 
-## Order Routes
+### Order Routes
 
 | Route                                     | Method | Description                            |
 |-------------------------------------------|--------|----------------------------------------|
@@ -238,23 +238,23 @@ Note: Make sure that MongoDB and Redis are running on your system before startin
 | /api/restaurant/accept-order/{orderId}    | PUT    | Accept a specific order for a restaurant |
 | /api/restaurant/reject-order/{orderId}    | PUT    | Reject a specific order for a restaurant |
 
-## Income Routes
+### Income Routes
 
 | Route                          | Method | Description                   |
 |--------------------------------|--------|-------------------------------|
 | /api/restaurant/income        | GET    | Get the income of a restaurant |
 
 
-# API Endpoints for Delivery Partners
+## API Endpoints for Delivery Partners
 
-## Authentication Routes
+### Authentication Routes
 
 | Endpoint                      | Method | Description                               |
 | -----------------------------|--------| ----------------------------------------- |
 | /api/delivery-partner/auth/login | POST   | Delivery partner login                    |
 | /api/delivery-partner/auth/generate-otp | POST   | Generate OTP for delivery partner email   |
 
-## Delivery Partner Routes
+### Delivery Partner Routes
 
 | Endpoint                                     | Method | Description                                          |
 | -------------------------------------------- |--------| ---------------------------------------------------- |
